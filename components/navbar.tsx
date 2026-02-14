@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Link from "next/link"
 import { Menu, X } from "lucide-react"
 
@@ -12,15 +12,30 @@ const navLinks = [
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20)
+    window.addEventListener("scroll", handleScroll)
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <div className="container flex items-center justify-between h-16 md:h-18">
-        <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-sm">P</span>
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-background/95 backdrop-blur-md shadow-sm"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="container flex items-center justify-between h-18">
+        <Link href="/" className="flex items-center gap-2.5">
+          <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
+            <span className="text-primary-foreground font-heading font-bold text-base">P</span>
           </div>
-          <span className="font-heading font-bold text-lg text-foreground">Pondzi App</span>
+          <span className="font-heading font-bold text-xl text-foreground">
+            Pondzi App
+          </span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">
@@ -28,7 +43,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
               {link.label}
             </a>
@@ -38,20 +53,20 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <a
             href="#"
-            className="inline-flex items-center justify-center rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground hover:bg-muted transition-colors"
+            className="inline-flex items-center justify-center rounded-xl px-5 py-2.5 text-sm font-semibold text-foreground hover:bg-muted transition-colors"
           >
             Connexion
           </a>
           <a
             href="#demo"
-            className="inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center justify-center rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 transition-colors"
           >
             Demander une demo
           </a>
         </div>
 
         <button
-          className="md:hidden p-2 text-foreground"
+          className="md:hidden p-2 text-foreground rounded-lg hover:bg-muted transition-colors"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Fermer le menu" : "Ouvrir le menu"}
         >
@@ -60,28 +75,29 @@ export function Navbar() {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-background border-b border-border">
-          <div className="container flex flex-col gap-4 py-4">
+        <div className="md:hidden bg-background/98 backdrop-blur-md border-t border-border">
+          <div className="container flex flex-col gap-1 py-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                className="rounded-lg px-4 py-3 text-sm font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
                 {link.label}
               </a>
             ))}
-            <div className="flex flex-col gap-2 pt-2 border-t border-border">
+            <div className="flex flex-col gap-2 pt-4 mt-2 border-t border-border">
               <a
                 href="#"
-                className="inline-flex items-center justify-center rounded-lg border border-border px-4 py-2 text-sm font-medium text-foreground hover:bg-muted transition-colors"
+                className="inline-flex items-center justify-center rounded-xl border border-border px-4 py-2.5 text-sm font-semibold text-foreground hover:bg-muted transition-colors"
               >
                 Connexion
               </a>
               <a
                 href="#demo"
-                className="inline-flex items-center justify-center rounded-lg bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+                className="inline-flex items-center justify-center rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
+                onClick={() => setMobileOpen(false)}
               >
                 Demander une demo
               </a>

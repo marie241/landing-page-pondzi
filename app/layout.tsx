@@ -1,4 +1,4 @@
-import type { Metadata } from "next"
+import type { Metadata, Viewport } from "next"
 import { Inter, Outfit } from "next/font/google"
 import "./globals.css"
 
@@ -13,9 +13,16 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: "Pondzi App - Gestion de stock intelligente pour PME",
+  title: "Pondzi App - Gestion de stock intelligente pour PME africaines",
   description:
-    "Pondzi App est la solution de gestion de stock intelligente pour les PME et commercants africains. Automatisez vos inventaires, anticipez vos reapprovisionnements avec l'IA.",
+    "Pondzi App est la solution SaaS de gestion de stock intelligente pour les PME et commercants africains. Automatisez vos inventaires, anticipez vos reapprovisionnements avec l'IA.",
+}
+
+export const viewport: Viewport = {
+  themeColor: "#166534",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
 }
 
 export default function RootLayout({
