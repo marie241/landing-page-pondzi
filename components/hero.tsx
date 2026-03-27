@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react"
 export function Hero() {
   return (
     <section className="relative pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden bg-background">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,var(--color-secondary),transparent)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_80%_50%_at_50%_-20%,#dbeafe,transparent)]" />
       <div className="container relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
           <div className="flex-1 text-center lg:text-left animate-fade-up">
