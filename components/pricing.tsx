@@ -64,7 +64,7 @@ export function Pricing() {
             >
               {plan.badge && (
                 <div className="absolute -top-3.5 left-1/2 -translate-x-1/2">
-                  <span className="inline-flex items-center rounded-full bg-accent px-5 py-1.5 text-xs font-bold text-accent-foreground shadow-lg shadow-accent/30">
+                  <span className="inline-flex items-center rounded-full bg-accent px-5 py-1.5 text-xs font-bold text-white shadow-lg shadow-accent/30">
                     {plan.badge}
                   </span>
                 </div>
