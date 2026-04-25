@@ -1,10 +1,11 @@
 import Link from "next/link"
+import Image from "next/image"
 import type { Metadata } from "next"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Conditions Generales d'Utilisation - Pondzi App",
-  description: "Consultez les conditions generales d'utilisation de Pondzi App.",
+  title: "Conditions Generales d'Utilisation - Stock-up241",
+  description: "Consultez les conditions generales d'utilisation de Stock-up241.",
 }
 
 export default function ConditionsGenerales() {
@@ -12,11 +13,15 @@ export default function ConditionsGenerales() {
     <>
       <header className="bg-dark">
         <div className="container flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-base">P</span>
-            </div>
-            <span className="font-heading font-bold text-xl text-dark-foreground">Pondzi App</span>
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/images/stock-up241-logo.png"
+              alt="Stock-up241"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+            />
+            <span className="font-heading font-bold text-xl text-dark-foreground">Stock-up241</span>
           </Link>
           <Link
             href="/"
@@ -42,7 +47,7 @@ export default function ConditionsGenerales() {
               <h2 className="font-heading text-xl font-semibold text-foreground mb-3">1. Objet</h2>
               <p className="text-muted-foreground">
                 Les presentes Conditions Generales d&apos;Utilisation (CGU) regissent l&apos;utilisation
-                de la plateforme Pondzi App, un service de gestion de stock en ligne destine aux
+                de la plateforme Stock-up241, un service de gestion de stock en ligne destine aux
                 entreprises et commercants. En accedant a notre plateforme, vous acceptez d&apos;etre
                 lie par les presentes CGU.
               </p>
@@ -51,7 +56,7 @@ export default function ConditionsGenerales() {
             <section>
               <h2 className="font-heading text-xl font-semibold text-foreground mb-3">2. Description du service</h2>
               <p className="text-muted-foreground">
-                Pondzi App offre une solution SaaS de gestion de stock comprenant : le suivi des
+                Stock-up241 offre une solution SaaS de gestion de stock comprenant : le suivi des
                 inventaires en temps reel, les previsions de reapprovisionnement assistees par
                 intelligence artificielle, les alertes automatiques, la generation de rapports et
                 statistiques, et la gestion multi-utilisateurs.
@@ -61,7 +66,7 @@ export default function ConditionsGenerales() {
             <section>
               <h2 className="font-heading text-xl font-semibold text-foreground mb-3">3. Inscription et compte</h2>
               <p className="text-muted-foreground">
-                Pour utiliser Pondzi App, vous devez creer un compte en fournissant des informations
+                Pour utiliser Stock-up241, vous devez creer un compte en fournissant des informations
                 exactes et completes. Vous etes responsable de la confidentialite de vos identifiants
                 de connexion et de toutes les activites effectuees sous votre compte. Vous vous
                 engagez a nous informer immediatement de toute utilisation non autorisee.
@@ -71,7 +76,7 @@ export default function ConditionsGenerales() {
             <section>
               <h2 className="font-heading text-xl font-semibold text-foreground mb-3">4. Tarification et paiement</h2>
               <p className="text-muted-foreground mb-3">
-                Pondzi App propose deux formules d&apos;abonnement :
+                Stock-up241 propose deux formules d&apos;abonnement :
               </p>
               <ul className="list-disc pl-6 flex flex-col gap-2 text-muted-foreground">
                 <li>Offre Mensuelle : 25 000 FCFA par mois</li>
@@ -86,22 +91,22 @@ export default function ConditionsGenerales() {
 
             <section>
               <h2 className="font-heading text-xl font-semibold text-foreground mb-3">5. Obligations de l&apos;utilisateur</h2>
-              <p className="text-muted-foreground mb-3">En utilisant Pondzi App, vous vous engagez a :</p>
+              <p className="text-muted-foreground mb-3">En utilisant Stock-up241, vous vous engagez a :</p>
               <ul className="list-disc pl-6 flex flex-col gap-2 text-muted-foreground">
                 <li>Utiliser le service conformement aux lois en vigueur</li>
                 <li>Ne pas tenter d&apos;acceder a des systemes ou donnees non autorises</li>
                 <li>Ne pas copier, modifier ou distribuer le logiciel</li>
                 <li>Maintenir la securite de votre compte et de vos identifiants</li>
-                <li>Respecter les droits de propriete intellectuelle de Pondzi App</li>
+                <li>Respecter les droits de propriete intellectuelle de Stock-up241</li>
               </ul>
             </section>
 
             <section>
               <h2 className="font-heading text-xl font-semibold text-foreground mb-3">6. Propriete intellectuelle</h2>
               <p className="text-muted-foreground">
-                L&apos;ensemble des elements constituant la plateforme Pondzi App (logiciel, design,
+                L&apos;ensemble des elements constituant la plateforme Stock-up241 (logiciel, design,
                 textes, graphismes, logos, algorithmes) sont proteges par le droit de la propriete
-                intellectuelle et restent la propriete exclusive de Pondzi App.
+                intellectuelle et restent la propriete exclusive de Stock-up241.
               </p>
             </section>
 
@@ -117,7 +122,7 @@ export default function ConditionsGenerales() {
             <section>
               <h2 className="font-heading text-xl font-semibold text-foreground mb-3">8. Limitation de responsabilite</h2>
               <p className="text-muted-foreground">
-                Pondzi App ne saurait etre tenu responsable des dommages indirects resultant de
+                Stock-up241 ne saurait etre tenu responsable des dommages indirects resultant de
                 l&apos;utilisation ou de l&apos;impossibilite d&apos;utilisation du service. Notre responsabilite
                 totale est limitee au montant des frais d&apos;abonnement payes au cours des 12 derniers mois.
               </p>
@@ -155,7 +160,7 @@ export default function ConditionsGenerales() {
       <footer className="bg-foreground text-background py-8">
         <div className="container text-center">
           <p className="text-sm text-background/40">
-            &copy; {new Date().getFullYear()} Pondzi App. Tous droits reserves.
+            &copy; {new Date().getFullYear()} Stock-up241. Tous droits reserves.
           </p>
         </div>
       </footer>

@@ -49,10 +49,10 @@ export function Advantages() {
             Avantages
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-balance">
-            Les avantages de Pondzi App
+            Les avantages de Stock-up241
           </h2>
           <p className="mt-5 text-muted-foreground leading-relaxed text-pretty">
-            Decouvrez pourquoi des centaines d&apos;entreprises font confiance a Pondzi App
+            Decouvrez pourquoi des centaines d&apos;entreprises font confiance a Stock-up241
             pour la gestion de leur stock.
           </p>
         </div>

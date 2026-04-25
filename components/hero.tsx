@@ -18,20 +18,24 @@ export function Hero() {
               de votre stock
             </h1>
             <p className="mt-6 text-lg text-muted-foreground leading-relaxed max-w-xl mx-auto lg:mx-0 text-pretty">
-              Pondzi App aide les PME et commercants africains a gerer leurs
+              Stock-up241 aide les PME et commercants africains a gerer leurs
               inventaires en temps reel, anticiper les ruptures et optimiser
               chaque commande grace a l&apos;intelligence artificielle.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 mt-10 justify-center lg:justify-start">
               <a
-                href="#demo"
+                href="https://wa.me/24166758191"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-primary px-7 py-3.5 text-base font-semibold text-primary-foreground shadow-lg shadow-primary/25 hover:bg-primary/90 transition-all"
               >
                 Demander une demo
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
               </a>
               <a
-                href="#offres"
+                href="https://ponzi-2.vercel.app/register"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto inline-flex items-center justify-center rounded-xl border-2 border-border px-7 py-3.5 text-base font-semibold text-foreground hover:border-primary hover:text-primary transition-all"
               >
                 Essai gratuit
@@ -54,7 +58,7 @@ export function Hero() {
               <div className="absolute -inset-1 bg-gradient-to-b from-primary/10 to-transparent rounded-2xl" />
               <Image
                 src="/images/hero-mockup.jpg"
-                alt="Interface de gestion de stock Pondzi App montrant un tableau de bord avec graphiques et niveaux d'inventaire"
+                alt="Interface de gestion de stock Stock-up241 montrant un tableau de bord avec graphiques et niveaux d'inventaire"
                 width={640}
                 height={440}
                 className="relative rounded-2xl shadow-2xl shadow-foreground/10 w-full h-auto"

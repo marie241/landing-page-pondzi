@@ -11,11 +11,13 @@ export function CtaSection() {
           </h2>
           <p className="mt-6 text-lg text-dark-foreground/60 leading-relaxed max-w-xl mx-auto text-pretty">
             Rejoignez les entreprises qui ont deja transforme leur gestion de stock
-            avec Pondzi App. Commencez gratuitement ou demandez une demonstration personnalisee.
+            avec Stock-up241. Commencez gratuitement ou demandez une demonstration personnalisee.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10">
             <a
-              href="#"
+              href="https://wa.me/24166758191"
+              target="_blank"
+              rel="noopener noreferrer"
               className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-xl bg-accent px-8 py-4 text-base font-semibold text-accent-foreground shadow-lg shadow-accent/30 hover:bg-accent/90 transition-all"
             >
               Demander une demo
