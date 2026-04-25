@@ -8,7 +8,7 @@ const partners = [
     logo: "/images/partners/oswaldo.png",
   },
   {
-    name: "AJ Royal",
+    name: "Showroom by LJ",
     logo: "/images/partners/aj-royal.png",
   },
   {
