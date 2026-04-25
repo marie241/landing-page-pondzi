@@ -57,7 +57,9 @@ export function Navbar() {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="#"
+            href="https://ponzi-2.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-xl px-5 py-2.5 text-sm font-semibold text-foreground hover:bg-muted transition-colors"
           >
             Connexion
@@ -96,7 +98,9 @@ export function Navbar() {
             ))}
             <div className="flex flex-col gap-2 pt-4 mt-2 border-t border-border">
               <a
-                href="#"
+                href="https://ponzi-2.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-xl border border-border px-4 py-2.5 text-sm font-semibold text-foreground hover:bg-muted transition-colors"
               >
                 Connexion
