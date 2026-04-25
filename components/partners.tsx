@@ -53,7 +53,7 @@ export function Partners() {
               key={`${partner.name}-${index}`}
               className="flex items-center justify-center mx-4 shrink-0"
             >
-              <div className="flex items-center gap-4 px-8 py-5 rounded-2xl border border-border bg-card hover:border-primary/30 hover:shadow-md transition-all">
+              <div className="flex flex-col items-center gap-3 px-6 py-5 rounded-2xl border border-border bg-card hover:border-primary/30 hover:shadow-md transition-all w-40">
                 <div className="relative w-14 h-14 shrink-0">
                   <Image
                     src={partner.logo}
@@ -62,7 +62,7 @@ export function Partners() {
                     className="object-contain"
                   />
                 </div>
-                <span className="font-semibold text-sm text-card-foreground whitespace-nowrap max-w-[140px] leading-snug">
+                <span className="font-semibold text-xs text-card-foreground text-center leading-snug w-full line-clamp-2">
                   {partner.name}
                 </span>
               </div>
