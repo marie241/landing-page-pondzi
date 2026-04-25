@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export function Footer() {
   return (
@@ -6,11 +7,15 @@ export function Footer() {
       <div className="container py-14">
         <div className="flex flex-col lg:flex-row items-start justify-between gap-10">
           <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-2.5">
-              <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
-                <span className="text-primary-foreground font-heading font-bold text-base">P</span>
-              </div>
-              <span className="font-heading font-bold text-xl text-background">Pondzi App</span>
+            <div className="flex items-center gap-2">
+              <Image
+                src="/images/stock-up241-logo.png"
+                alt="Stock-up241"
+                width={40}
+                height={40}
+                className="h-10 w-auto"
+              />
+              <span className="font-heading font-bold text-xl text-background">Stock-up241</span>
             </div>
             <p className="text-sm text-background/50 max-w-xs leading-relaxed">
               La solution de gestion de stock intelligente pour les PME et commercants africains.
@@ -81,7 +86,7 @@ export function Footer() {
       <div className="border-t border-background/10">
         <div className="container py-6 text-center">
           <p className="text-sm text-background/40">
-            &copy; {new Date().getFullYear()} Pondzi App. Tous droits reserves.
+            &copy; {new Date().getFullYear()} Stock-up241. Tous droits reserves.
           </p>
         </div>
       </div>

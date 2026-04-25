@@ -13,9 +13,9 @@ const outfit = Outfit({
 })
 
 export const metadata: Metadata = {
-  title: "Pondzi App - Gestion de stock intelligente pour PME africaines",
+  title: "Stock-up241 - Gestion de stock intelligente pour PME africaines",
   description:
-    "Pondzi App est la solution SaaS de gestion de stock intelligente pour les PME et commercants africains. Automatisez vos inventaires, anticipez vos reapprovisionnements avec l'IA.",
+    "Stock-up241 est la solution SaaS de gestion de stock intelligente pour les PME et commercants africains. Automatisez vos inventaires, anticipez vos reapprovisionnements avec l'IA.",
 }
 
 export const viewport: Viewport = {

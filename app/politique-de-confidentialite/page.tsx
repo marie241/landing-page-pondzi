@@ -1,10 +1,11 @@
 import Link from "next/link"
+import Image from "next/image"
 import type { Metadata } from "next"
 import { ArrowLeft } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Politique de confidentialite - Pondzi App",
-  description: "Decouvrez comment Pondzi App collecte, utilise et protege vos donnees personnelles.",
+  title: "Politique de confidentialite - Stock-up241",
+  description: "Decouvrez comment Stock-up241 collecte, utilise et protege vos donnees personnelles.",
 }
 
 export default function PolitiqueDeConfidentialite() {
@@ -12,11 +13,15 @@ export default function PolitiqueDeConfidentialite() {
     <>
       <header className="bg-dark">
         <div className="container flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2.5">
-            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-heading font-bold text-base">P</span>
-            </div>
-            <span className="font-heading font-bold text-xl text-dark-foreground">Pondzi App</span>
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/images/stock-up241-logo.png"
+              alt="Stock-up241"
+              width={40}
+              height={40}
+              className="h-10 w-auto"
+            />
+            <span className="font-heading font-bold text-xl text-dark-foreground">Stock-up241</span>
           </Link>
           <Link
             href="/"
@@ -41,7 +46,7 @@ export default function PolitiqueDeConfidentialite() {
             <section>
               <h2 className="font-heading text-xl font-semibold text-foreground mb-3">1. Introduction</h2>
               <p className="text-muted-foreground">
-                Pondzi App s&apos;engage a proteger la vie privee de ses utilisateurs. La presente
+                Stock-up241 s&apos;engage a proteger la vie privee de ses utilisateurs. La presente
                 politique de confidentialite explique comment nous collectons, utilisons, stockons et
                 protegeons vos informations personnelles lorsque vous utilisez notre application de
                 gestion de stock et notre site web.
@@ -125,7 +130,7 @@ export default function PolitiqueDeConfidentialite() {
       <footer className="bg-foreground text-background py-8">
         <div className="container text-center">
           <p className="text-sm text-background/40">
-            &copy; {new Date().getFullYear()} Pondzi App. Tous droits reserves.
+            &copy; {new Date().getFullYear()} Stock-up241. Tous droits reserves.
           </p>
         </div>
       </footer>

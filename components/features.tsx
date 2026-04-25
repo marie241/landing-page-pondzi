@@ -58,7 +58,7 @@ export function Features() {
             Tout ce dont vous avez besoin pour gerer votre stock
           </h2>
           <p className="mt-5 text-muted-foreground leading-relaxed text-pretty">
-            Pondzi App reunit les outils essentiels pour simplifier et automatiser
+            Stock-up241 reunit les outils essentiels pour simplifier et automatiser
             la gestion de votre inventaire au quotidien.
           </p>
         </div>

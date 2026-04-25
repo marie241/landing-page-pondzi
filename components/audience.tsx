@@ -42,11 +42,11 @@ export function Audience() {
             Pour qui ?
           </p>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-balance">
-            Qui peut utiliser Pondzi App ?
+            Qui peut utiliser Stock-up241 ?
           </h2>
           <p className="mt-5 text-muted-foreground leading-relaxed text-pretty">
             Que vous soyez un petit commercant ou une entreprise en pleine expansion,
-            Pondzi App s&apos;adapte a vos besoins.
+            Stock-up241 s&apos;adapte a vos besoins.
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">

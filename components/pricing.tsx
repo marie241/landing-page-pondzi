@@ -5,7 +5,7 @@ const plans = [
     name: "Offre Mensuelle",
     price: "25 000",
     period: "FCFA / mois",
-    description: "Ideal pour demarrer et tester toutes les fonctionnalites de Pondzi App.",
+    description: "Ideal pour demarrer et tester toutes les fonctionnalites de Stock-up241.",
     features: [
       "Gestion de stock en temps reel",
       "Alertes intelligentes",
@@ -98,7 +98,9 @@ export function Pricing() {
                 ))}
               </ul>
               <a
-                href="#demo"
+                href={plan.cta === "S'abonner" ? "https://ponzi-2.vercel.app/register" : "https://wa.me/24166758191"}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={`group mt-8 inline-flex items-center justify-center gap-2 rounded-xl px-6 py-3.5 text-base font-semibold transition-all ${
                   plan.highlighted
                     ? "bg-accent text-accent-foreground shadow-lg shadow-accent/30 hover:bg-accent/90"

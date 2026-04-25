@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
 const navLinks = [
@@ -29,12 +30,16 @@ export function Navbar() {
       }`}
     >
       <div className="container flex items-center justify-between h-18">
-        <Link href="/" className="flex items-center gap-2.5">
-          <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center">
-            <span className="text-primary-foreground font-heading font-bold text-base">P</span>
-          </div>
+        <Link href="/" className="flex items-center gap-2">
+          <Image
+            src="/images/stock-up241-logo.png"
+            alt="Stock-up241"
+            width={40}
+            height={40}
+            className="h-10 w-auto"
+          />
           <span className="font-heading font-bold text-xl text-foreground">
-            Pondzi App
+            Stock-up241
           </span>
         </Link>
 
@@ -52,13 +57,17 @@ export function Navbar() {
 
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="#"
+            href="https://ponzi-2.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-xl px-5 py-2.5 text-sm font-semibold text-foreground hover:bg-muted transition-colors"
           >
             Connexion
           </a>
           <a
-            href="#demo"
+            href="https://wa.me/24166758191"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center rounded-xl bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-sm hover:bg-primary/90 transition-colors"
           >
             Demander une demo
@@ -89,13 +98,17 @@ export function Navbar() {
             ))}
             <div className="flex flex-col gap-2 pt-4 mt-2 border-t border-border">
               <a
-                href="#"
+                href="https://ponzi-2.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-xl border border-border px-4 py-2.5 text-sm font-semibold text-foreground hover:bg-muted transition-colors"
               >
                 Connexion
               </a>
               <a
-                href="#demo"
+                href="https://wa.me/24166758191"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-xl bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground hover:bg-primary/90 transition-colors"
                 onClick={() => setMobileOpen(false)}
               >
