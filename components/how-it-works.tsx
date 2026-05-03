@@ -17,22 +17,17 @@ export function HowItWorks() {
           </p>
         </div>
 
-        {/* Mobile-format video centered */}
+        {/* Facebook Reels video centered */}
         <div className="flex justify-center">
-          <div className="relative w-full max-w-[320px] rounded-3xl overflow-hidden shadow-2xl border border-border bg-foreground">
-            {/* Phone notch decoration */}
-            <div className="absolute top-0 left-0 right-0 h-7 bg-foreground z-10 flex items-center justify-center">
-              <div className="w-20 h-1.5 rounded-full bg-background/20" />
-            </div>
-            <video
-              className="w-full aspect-[9/16] object-cover"
-              controls
-              playsInline
-              poster=""
-            >
-              <source src="/videos/how-it-works.mp4" type="video/mp4" />
-              Votre navigateur ne supporte pas la lecture de videos.
-            </video>
+          <div className="w-full max-w-[320px]">
+            <iframe
+              src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Freel%2F979780501651499&show_text=false&width=320&height=568"
+              width="320"
+              height="568"
+              className="border-0 rounded-3xl overflow-hidden shadow-2xl"
+              allow="autoplay;clipboard-write;encrypted-media;picture-in-picture;web-share"
+              allowFullScreen={true}
+            ></iframe>
           </div>
         </div>
       </div>
