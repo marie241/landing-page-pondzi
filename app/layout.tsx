@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Stock-up241 - Gestion de stock intelligente pour PME africaines",
   description:
     "Stock-up241 est la solution SaaS de gestion de stock intelligente pour les PME et commercants africains. Automatisez vos inventaires, anticipez vos reapprovisionnements avec l'IA.",
+  icons: {
+    icon: "/images/stock-up241-logo.png",
+  },
 }
 
 export const viewport: Viewport = {
